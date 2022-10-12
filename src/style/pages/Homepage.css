@@ -1,0 +1,13 @@
+.homepageBody{
+    padding: 0px 90px;
+}
+
+.cardsContainer{
+    background-color: #F7F7F7;
+    border-radius: 25px;
+    padding: 50px;
+    gap: 4.2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

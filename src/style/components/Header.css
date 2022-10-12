@@ -5,27 +5,29 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
-    width: 1240px;
+    width: auto;
     height: auto;
+
+    padding: 0px 90px;
 }
 
 .logo{
     height: 68px;
-    width: 210px;
+    width: 20%;
 }
 
 .navbar{
-    width: 25%;
+    width: 35%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .nav{
     list-style-type: none;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    width: 55%;
     padding: 0px;
     font-weight: 500;
 }
@@ -33,7 +35,7 @@
 li a{
     color: #FF6060;
     text-decoration-line: none;
-    size: 24px;
+    font-size: 90%;
 }
 
 li a:hover{
