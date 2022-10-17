@@ -27,9 +27,17 @@
     text-align: start;
     font-weight: 400;
     font-size: 20px;
+    display: block;
 }
 
-.dropDownArrow{
+.hidden{
+    display: none;
+}
+
+.arrow{
+    transform: none;
+}
+
+.open{
     transform: rotate(180deg)
 }
-
