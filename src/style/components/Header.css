@@ -6,8 +6,8 @@
     margin-right: auto;
     margin-top: 2%;
     width: auto;
+    max-width: 1440px;
     height: auto;
-
     padding: 0px 90px;
 }
 
@@ -38,6 +38,32 @@ li a{
     font-size: 90%;
 }
 
-li a:hover{
+.active{
     text-decoration-line: underline;
+}
+
+/* max-width = desktop first, si l'ecran est inf ou egal alors {...} */
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .header{
+        padding: 10px 20px;
+        margin: auto;
+    }
+    .nav{
+        width: 35%;
+    }
+    .navbar{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .nav{
+        width: 50%;
+    }
+    li a{
+        text-transform: uppercase;
+    }
+    
 }

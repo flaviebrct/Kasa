@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/components/Header.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LOGO from "../img/LOGO.svg";
 
 export default function Header() {
@@ -10,10 +10,12 @@ export default function Header() {
       <nav className="navbar">
         <ul className="nav">
           <li>
-            <Link to="/">Accueil</Link>
+            <NavLink to="/" end>
+              Accueil
+            </NavLink>
           </li>
           <li>
-            <Link to="/APropos">A Propos</Link>
+            <NavLink to="/APropos">A Propos</NavLink>
           </li>
         </ul>
       </nav>

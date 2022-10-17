@@ -1,13 +1,38 @@
 .homepageBody{
     padding: 0px 90px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .cardsContainer{
     background-color: #F7F7F7;
     border-radius: 25px;
-    padding: 50px;
-    gap: 4.2rem;
+    padding: 35px;
+    gap: 2rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+/* max-width = desktop first, si l'ecran est inf ou egal alors {...} */
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .homepageBody{
+        padding: 0px 20px;
+
+        margin: auto;
+    }
+    .cardsContainer{
+        gap: 1.7rem;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .cardsContainer{
+        width: 100%;
+        background-color: white;
+        padding: 0px;
+    }
+
 }

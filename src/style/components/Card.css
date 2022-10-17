@@ -1,7 +1,10 @@
 .card{
     position: relative;
-    width: 340px;
     height: 340px;
+    max-width: 340px;
+    width: 30%;
+    min-height: 255px;
+    /* min-width: 335px; */
     border-radius: 10px;
     overflow: hidden;
     margin: 0px;
@@ -34,4 +37,23 @@
     font-weight: 500;
     font-size: 93%;
     z-index: 10;
+}
+
+/* max-width = desktop first, si l'ecran est inf ou egal alors {...} */
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .card{
+        width: 47%;
+        max-width: 992px;
+        min-width: 114px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card{
+        width: 100%;
+        
+    }
+    
+
 }
