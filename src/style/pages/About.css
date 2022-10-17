@@ -3,3 +3,8 @@
     max-width: 1440px;
     margin: auto;
 }
+
+.collapseContainer{
+    max-width: 90%;
+    margin: auto;
+}
