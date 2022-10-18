@@ -8,3 +8,30 @@
     max-width: 90%;
     margin: auto;
 }
+
+/* max-width = desktop first, si l'ecran est inf ou egal alors {...} */
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .aboutBody{
+        padding: 0px 20px;
+        margin: auto;
+    }
+    .collapseContainer {
+        max-width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .collapseContainer {
+        max-width: 100%;
+    }
+    
+    .aboutBody .banner{
+        height: 20vh;
+    }
+
+    .aboutBody .banner .blackBaground .bannerImg{
+        object-position: 100% 100%;
+    }
+}

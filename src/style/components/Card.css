@@ -1,13 +1,15 @@
 .card{
     position: relative;
-    height: 340px;
-    max-width: 340px;
+    /* height: auto; */
+    /* max-width: 340px; */
     width: 30%;
-    min-height: 255px;
+    /* min-height: 255px; */
     /* min-width: 335px; */
     border-radius: 10px;
     overflow: hidden;
     margin: 0px;
+    margin-bottom: 2%;
+    aspect-ratio: 1 / 1;
 }
 
 .cardGradient{
@@ -44,16 +46,18 @@
 @media screen and (max-width: 992px) {
     .card{
         width: 47%;
-        max-width: 992px;
-        min-width: 114px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card{
+        margin-bottom: 1%;
     }
 }
 
 @media screen and (max-width: 576px) {
     .card{
         width: 100%;
-        
+        aspect-ratio: unset;
     }
-    
-
 }
