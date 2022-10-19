@@ -3,6 +3,7 @@ import { useParams, Navigate } from "react-router-dom";
 import "../style/pages/Logement.css";
 import Data from "../data/data";
 import Tags from "../components/Tags";
+import Collapse from "../components/Collapse";
 
 export default function Logement() {
   const params = useParams();
@@ -13,10 +14,14 @@ export default function Logement() {
   }
 
   return (
-    <div>
+    <>
       <h1>{validProperty.title}</h1>
       <p>{validProperty.location}</p>
       <Tags content={validProperty.tags} />
-    </div>
+      <div className="collapseContainer">
+        <Collapse title="Description" content={validProperty.description} />
+        <Collapse title="Équipments" content={validProperty.equipments} />
+      </div>
+    </>
   );
 }

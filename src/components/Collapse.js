@@ -18,7 +18,15 @@ function Collapse(props) {
       </button>
 
       <div className={collapseOpen ? "boxContent" : "boxContent hidden"}>
-        {props.content}
+        {Array.isArray(props.content) ? (
+          <ul>
+            {props.content.map((equipment) => (
+              <li key={equipment}>{equipment}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{props.content}</p>
+        )}
       </div>
     </div>
   );
