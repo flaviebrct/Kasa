@@ -10,11 +10,7 @@ function Collapse(props) {
     <div className="dropDownBox">
       <button className="dropDownBtn" onClick={collapseState}>
         {props.title}
-        <img
-          className={collapseOpen ? "arrow open" : "arrow"}
-          src={dropDownArrow}
-          alt="fleche menu déroulant"
-        ></img>
+        <img className={collapseOpen ? "arrow open" : "arrow"} src={dropDownArrow} alt="fleche menu déroulant"></img>
       </button>
 
       <div className={collapseOpen ? "boxContent" : "boxContent hidden"}>

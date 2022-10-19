@@ -16,7 +16,7 @@ export default function Logement() {
 
   return (
     <section className="logementContainer">
-      <Carrousel src={validProperty.pictures} />
+      <Carrousel photos={validProperty.pictures} />
       <div className="logementTitle">
         <h1>{validProperty.title}</h1>
         <p>{validProperty.location}</p>
