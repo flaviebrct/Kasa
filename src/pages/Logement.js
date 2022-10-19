@@ -25,7 +25,7 @@ export default function Logement() {
         <p>{validProperty.host.name}</p>
         <img src={validProperty.host.picture} alt="Propriétaire du logement" />
       </div>
-      <Tags content={validProperty.tags} />
+      <Tags tags={validProperty.tags} />
       <div className="collapseContainer">
         <Collapse title="Description" content={validProperty.description} />
         <Collapse title="Équipments" content={validProperty.equipments} />
