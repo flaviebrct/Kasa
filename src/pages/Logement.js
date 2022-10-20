@@ -4,6 +4,7 @@ import "../style/pages/Logement.css";
 import Data from "../data/data";
 import Carrousel from "../components/Carrousel";
 import HostInfos from "../components/HostInfos";
+import Rating from "../components/Rating";
 import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
 
@@ -25,7 +26,10 @@ export default function Logement() {
         </div>
         <HostInfos name={validProperty.host.name} picture={validProperty.host.picture} />
       </div>
-      <Tags tags={validProperty.tags} />
+      <div className="tagsRatingWrapper">
+        <Tags tags={validProperty.tags} />
+        <Rating star={validProperty.rating} />
+      </div>
       <div className="collapseContainerLogement">
         <Collapse title="Description" content={validProperty.description} />
         <Collapse title="Équipments" content={validProperty.equipments} />
