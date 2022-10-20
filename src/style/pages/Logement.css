@@ -3,3 +3,37 @@
     max-width: 1440px;
     margin: auto;
 }
+
+.infoContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.logementTitle h1{
+    font-weight: 500;
+    font-size: 180%;
+    color: #FF6060;
+    margin: 0px;
+}
+
+.logementTitle p{
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+    margin-top: 5px;
+}
+
+.collapseContainerLogement{
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapseContainerLogement .dropDownBox{
+    width: 47%;
+    margin: 15px 0px;
+}
+
+.collapseContainerLogement .dropDownBox .boxContent{
+    font-size: 18px;
+}
