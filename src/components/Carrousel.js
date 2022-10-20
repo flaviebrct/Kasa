@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "../style/components/Carrousel.css";
+import Count from "./Count";
 import rightArrow from "../img/rightArrow.svg";
 import leftArrow from "../img/leftArrow.svg";
 
@@ -12,6 +13,7 @@ export default function Carrousel(props) {
 
   return (
     <div className="carrouselContainer">
+      <Count current={currentSlide + 1} slideLength={length} />
       <button className={length === 1 ? "hidden" : "leftArrow"} onClick={previous}>
         <img src={leftArrow} alt="Flèche vers la gauche" />
       </button>
