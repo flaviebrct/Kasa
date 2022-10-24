@@ -1,15 +1,15 @@
 .hostInfos{
+    margin-top: -15px;
     display: flex;
     align-items: center;
-    margin-top: -55px;
     gap: 10px;
 }
 
 .hostInfos p{
-    width: 80px;
+    width: 70px;
     text-align: end;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     color: #FF6060;
 }
 
@@ -17,4 +17,45 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
+
+/* max-width = desktop first, si l'ecran est inf ou egal alors {...} */
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .hostInfos img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .hostInfos p{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .hostInfos {
+        margin: 0;
+    }
+
+    .hostInfos img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .hostInfos p{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .hostInfos img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .hostInfos p{
+        font-size: 12px;
+    }
 }

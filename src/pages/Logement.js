@@ -20,15 +20,15 @@ export default function Logement() {
     <section className="logementContainer">
       <Carrousel photos={validProperty.pictures} />
       <div className="infoContainer">
-        <div className="logementTitle">
+        <div className="titleTags">
           <h1>{validProperty.title}</h1>
           <p>{validProperty.location}</p>
+          <Tags tags={validProperty.tags} />
         </div>
-        <HostInfos name={validProperty.host.name} picture={validProperty.host.picture} />
-      </div>
-      <div className="tagsRatingWrapper">
-        <Tags tags={validProperty.tags} />
-        <Rating star={validProperty.rating} />
+        <div className="hostRating">
+          <HostInfos name={validProperty.host.name} picture={validProperty.host.picture} />
+          <Rating star={validProperty.rating} />
+        </div>
       </div>
       <div className="collapseContainerLogement">
         <Collapse title="Description" content={validProperty.description} />

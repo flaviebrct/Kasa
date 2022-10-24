@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/components/Rating.css";
 import redStar from "../img/redStar.svg";
 import greyStar from "../img/greyStar.svg";
 

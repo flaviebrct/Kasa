@@ -29,6 +29,10 @@
     font-size: 20px;
     display: block;
 }
+.boxContent ul{
+    list-style-type: none;
+    padding: 0;
+}
 
 .hidden{
     display: none;
@@ -40,4 +44,42 @@
 
 .open{
     transform: rotate(180deg)
+}
+
+/* max-width = desktop first, si l'ecran est inf ou egal alors {...} */
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .dropDownBtn{
+        font-size: 17px;
+        height: auto;
+    }
+    .dropDownBox .arrow{
+        width: 20px;
+    }
+    .boxContent p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .dropDownBtn{
+        font-size: 15px;
+    }
+    .dropDownBox .arrow{
+        width: 15px;
+    }
+    .boxContent p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .dropDownBtn{
+        font-size: 13px;
+    }
+    .dropDownBox .arrow{
+        width: 10px;
+    }
+    .boxContent p{
+        font-size: 12px;
+    }
 }

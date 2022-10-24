@@ -1,0 +1,12 @@
+.ratingContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    .ratingContainer img{
+        width: 15%;
+    }
+
+
+}

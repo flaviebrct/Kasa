@@ -10,29 +10,31 @@
     margin-top: 40px;
 }
 
-.logementTitle h1{
+.titleTags h1{
     font-weight: 500;
-    font-size: 180%;
+    font-size: 20px;
     color: #FF6060;
     margin: 0px;
 }
 
-.logementTitle p{
+.titleTags p{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     color: #FF6060;
     margin-top: 5px;
+}
+
+.hostRating{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .collapseContainerLogement{
     display: flex;
     justify-content: space-between;
-}
-
-.tagsRatingWrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    margin-top: 15px;
 }
 
 .collapseContainerLogement .dropDownBox{
@@ -42,4 +44,52 @@
 
 .collapseContainerLogement .dropDownBox .boxContent{
     font-size: 18px;
+}
+
+/* max-width = desktop first, si l'ecran est inf ou egal alors {...} */
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .titleTags h1{
+        font-size: 22.7px;
+    }
+    .titleTags p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logementContainer{
+        padding: 0 20px;
+        margin-top: -20px;
+    }
+    .infoContainer{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .titleTags h1{
+        font-size: 20.4px;
+    }
+    .titleTags p{
+        font-size: 15px;
+    }
+    .hostRating{
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .titleTags h1{
+        font-size: 18px;
+    }
+    .titleTags p{
+        font-size: 14px;
+    }
+    .collapseContainerLogement{
+        flex-direction: column;
+    }
+    .collapseContainerLogement .dropDownBox{
+        width: 100%;
+    }
 }
