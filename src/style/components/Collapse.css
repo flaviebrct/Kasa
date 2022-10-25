@@ -56,7 +56,7 @@
     .dropDownBox .arrow{
         width: 20px;
     }
-    .boxContent p{
+    .boxContent p, li{
         font-size: 16px;
     }
 }
@@ -67,7 +67,7 @@
     .dropDownBox .arrow{
         width: 15px;
     }
-    .boxContent p{
+    .boxContent p, li{
         font-size: 14px;
     }
 }
@@ -79,7 +79,7 @@
     .dropDownBox .arrow{
         width: 10px;
     }
-    .boxContent p{
+    .boxContent p, li{
         font-size: 12px;
     }
 }
