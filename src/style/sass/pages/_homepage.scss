@@ -2,6 +2,12 @@
   padding: 0px 90px;
   max-width: 1440px;
   margin: auto;
+  
+  .banner {
+    .blackBackground .bannerImg {
+        opacity: 40%;
+      }
+  }
 
   .cardsContainer{
     background-color: $background;
@@ -29,6 +35,7 @@
 
 @media screen and (max-width: 576px) {
   .homepageBody{
+    margin: 0;
     .cardsContainer{
       width: 100%;
       background-color: $white;
