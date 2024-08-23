@@ -4,4 +4,8 @@ body {
   min-width: 320px;
   margin: 0px;
   z-index: 1;
+
+  button {
+    cursor: pointer;
+  }
 }

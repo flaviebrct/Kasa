@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams, Navigate } from "react-router-dom";
-import "../style/pages/Logement.css";
 import Data from "../data/data";
 import Carrousel from "../components/Carrousel";
 import HostInfos from "../components/HostInfos";
