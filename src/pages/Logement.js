@@ -21,8 +21,8 @@ export default function Logement() {
       <Carrousel photos={validProperty.pictures} />
       <div className="infoContainer">
         <div className="titleTags">
-          <h1>{validProperty.title}</h1>
-          <p>{validProperty.location}</p>
+          <h1 className="thin">{validProperty.title}</h1>
+          <p className="thin">{validProperty.location}</p>
           <Tags tags={validProperty.tags} />
         </div>
         <div className="hostRating">
