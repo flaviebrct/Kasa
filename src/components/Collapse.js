@@ -8,7 +8,7 @@ function Collapse(props) {
 
   return (
     <div className="dropDownBox">
-      <button className="dropDownBtn" onClick={collapseState}>
+      <button className="dropDownBtn bold" onClick={collapseState}>
         {props.title}
         <img className={collapseOpen ? "arrow open" : "arrow"} src={dropDownArrow} alt="fleche menu déroulant"></img>
       </button>

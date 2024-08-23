@@ -1,0 +1,53 @@
+.aboutBody {
+  padding: 0px 90px;
+  max-width: 1440px;
+  margin: auto;
+
+  .banner{
+    height: 223px;
+    margin: 38px 0;
+    
+    .blackBaground .bannerImg{
+      object-position: 100% 50%;
+    }
+  }
+
+  .collapseContainer {
+    max-width: 80%;
+    margin: auto;
+
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+  .aboutBody{
+    padding: 0px 20px;
+    margin: auto;
+    
+    .collapseContainer {
+      max-width: 95%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .aboutBody {
+    .banner{
+      height: 111px;
+      margin: 0 0 20px 0;
+      
+      .blackBaground .bannerImg{
+        object-position: 100% 50%;
+      }
+    }
+    
+    .collapseContainer {
+      max-width: 100%;
+
+      .dropDownBox {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
