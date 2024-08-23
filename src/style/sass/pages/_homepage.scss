@@ -1,0 +1,38 @@
+.homepageBody{
+  padding: 0px 90px;
+  max-width: 1440px;
+  margin: auto;
+
+  .cardsContainer{
+    background-color: $background;
+    border-radius: 25px;
+    padding: 35px;
+    gap: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .homepageBody{
+    padding: 0px 20px;
+    margin: auto;
+  
+    .cardsContainer{
+      gap: 1.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .homepageBody{
+    .cardsContainer{
+      width: 100%;
+      background-color: $white;
+      padding: 0px;
+    }
+  } 
+}

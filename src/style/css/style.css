@@ -1,3 +1,54 @@
+body {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  margin: 0px;
+  z-index: 1;
+}
 
+* {
+  font-family: Montserrat;
+  text-align: left;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.thin {
+  font-weight: 500;
+}
+
+.homepageBody {
+  padding: 0px 90px;
+  max-width: 1440px;
+  margin: auto;
+}
+.homepageBody .cardsContainer {
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  padding: 35px;
+  gap: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) {
+  .homepageBody {
+    padding: 0px 20px;
+    margin: auto;
+  }
+  .homepageBody .cardsContainer {
+    gap: 1.7rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .homepageBody .cardsContainer {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 0px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

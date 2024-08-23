@@ -1,4 +1,3 @@
-import "./style/App.css";
 import Homepage from "./pages/Homepage";
 import Logement from "./pages/Logement";
 import Error from "./pages/404";
