@@ -1,33 +1,10 @@
-.errorContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ff6060;
-    margin: 0 90px;
-    text-align: center;
-}
 
-.errorTitle {
-    margin-top: 150px;
-    margin-bottom: 0px;
-    font-size: 288px;
-    font-weight: 700;
-}
 
-.errorContent {
-    margin-top: 0px;
-    margin-bottom: 180px;
-    font-size: 36px;
-    font-weight: 500;
-}
 
-.errorLink {
-    font-size: 18px;
-    font-weight: 500;
-    color: #ff6060;
-    text-decoration: underline;
-    margin-bottom: 50%;
-}
+
+
+
+
 
 /* max-width = desktop first, si l'ecran est inf ou egal alors {...} */
 /* Media Queries */
@@ -35,30 +12,5 @@
 
 }
 
-@media screen and (max-width: 768px) {
-    .errorTitle{
-        font-size: 190px;
-    }
-    .errorContent{
-        font-size: 27px;
-    }
-    .errorLink{
-        font-size: 16px;
-    }
 
-}
 
-@media screen and (max-width: 576px) {
-    .errorContainer {
-        margin: 0 60px;
-    }
-    .errorTitle{
-        font-size: 96px;
-    }
-    .errorContent{
-        font-size: 18px;
-    }
-    .errorLink{
-        font-size: 14px;
-    }
-}
