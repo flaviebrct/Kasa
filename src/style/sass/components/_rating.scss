@@ -1,0 +1,18 @@
+.ratingContainer{
+  display: flex;
+  flex-direction: row;
+
+  .star {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ratingContainer {
+    .star {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
