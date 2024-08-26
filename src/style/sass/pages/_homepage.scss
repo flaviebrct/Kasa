@@ -1,6 +1,6 @@
 .homepageBody{
   padding: 0px 90px;
-  max-width: 1440px;
+  max-width: 1240px;
   margin: auto;
   
   .banner {
@@ -10,12 +10,12 @@
   }
 
   .cardsContainer{
-    background-color: $background;
+    background-color: #F6F6F6;
     border-radius: 25px;
-    padding: 35px;
-    gap: 2rem;
+    padding: 50px;
+    gap: 2.5rem 3rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
