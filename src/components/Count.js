@@ -1,9 +1,8 @@
 import React from "react";
-import "../style/components/Count.css";
 
 export default function Count(props) {
   return (
-    <div className="countContainer">
+    <div className="countContainer thin">
       <p>
         {props.current}/{props.slideLength}
       </p>
