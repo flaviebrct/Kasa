@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import "../style/components/Carrousel.css";
 import Count from "./Count";
 import rightArrow from "../img/rightArrow.svg";
 import leftArrow from "../img/leftArrow.svg";

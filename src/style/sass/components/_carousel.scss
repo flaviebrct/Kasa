@@ -1,0 +1,43 @@
+.carrouselContainer{
+  width: 100%;
+  height: 415px;
+  overflow: hidden;
+  border-radius: 25px;
+  position: relative;
+  aspect-ratio: 41/13;
+  
+  .leftArrow{
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+  }
+  
+  .rightArrow{
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    background-color: transparent;
+    border: 0;
+    z-index: 11;
+  }
+
+  .slideImg{
+    border-radius: 25px;
+    position: absolute ;
+    object-fit: cover;
+    opacity: 0;
+  }
+  
+  .current{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hidden{
+    display: none;
+  }
+}
