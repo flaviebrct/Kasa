@@ -1,4 +1,4 @@
-.carrouselContainer{
+.carrouselContainer {
   width: 100%;
   height: 415px;
   overflow: hidden;
@@ -6,7 +6,7 @@
   position: relative;
   aspect-ratio: 41/13;
   
-  .leftArrow{
+  .leftArrow {
     position: absolute;
     top: 40%;
     left: 20px;
@@ -15,7 +15,7 @@
     z-index: 10;
   }
   
-  .rightArrow{
+  .rightArrow {
     position: absolute;
     top: 40%;
     right: 20px;
@@ -24,20 +24,73 @@
     z-index: 11;
   }
 
-  .slideImg{
+  .slideImg {
     border-radius: 25px;
     position: absolute ;
     object-fit: cover;
     opacity: 0;
   }
   
-  .current{
+  .current {
     opacity: 1;
     width: 100%;
     height: 100%;
   }
   
-  .hidden{
+  .hidden {
     display: none;
+  }
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .carrouselContainer {
+    .leftArrow, .rightArrow {
+      img {
+        Width: 50%;
+      }
+    }
+    
+    .leftArrow {
+      top: 40%;
+      left: 10px;
+    }
+    
+    .rightArrow {
+      top: 40%;
+      right: -10px
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carrouselContainer {
+    aspect-ratio: 17/13;
+    height: 255px;
+
+    .leftArrow, .rightArrow {
+      img {
+        Width: 24%;
+      }
+    }
+
+    .leftArrow {
+      top: 45%;
+      left: 20px;
+    }
+
+    .rightArrow {
+      top: 45%;
+      right: -20px
+    }
+    
+    .countContainer {
+      display: none;
+    }
+
+    .slideImg {
+      object-position: 1;
+    }
   }
 }
