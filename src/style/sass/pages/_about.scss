@@ -15,9 +15,15 @@
   .collapseContainer {
     max-width: 80%;
     margin: auto;
-
+        
+    .dropDownBtn {
+      font-size: 24px;
+    }
   }
 }
+    
+    
+  
 
 /* Media Queries */
 @media screen and (max-width: 992px) {

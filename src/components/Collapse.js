@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import dropDownArrow from "../img/dropDownArrow.svg";
-import "../style/components/Collapse.css";
 
 function Collapse(props) {
   const [collapseOpen, setCollapseOpen] = useState(null);
