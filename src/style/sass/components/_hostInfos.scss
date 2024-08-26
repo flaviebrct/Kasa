@@ -1,0 +1,63 @@
+.hostInfos {
+  margin-top: -15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  .hostName {
+    width: 70px;
+    text-align: end;
+    font-size: 18px;
+    color: $red;
+  }
+  
+  >img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+  .hostInfos {
+    
+    .hostName {
+      font-size: 16px;
+    }
+
+    >img {
+      width: 53px;
+      height: 53px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hostInfos {
+    margin: 0;
+    
+    .hostName {
+      font-size: 14px;
+    }
+
+    >img {
+      width: 42px;
+      height: 42px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hostInfos {
+    
+    .hostName {
+      font-size: 12px;
+    }
+
+    >img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
