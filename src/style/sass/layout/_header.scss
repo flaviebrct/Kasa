@@ -46,7 +46,7 @@
     
     .navbar {
       align-items: center;
-      gap: 30px;
+      gap: 15px;
       
       >a {
         font-size: 18px;
@@ -57,10 +57,11 @@
 
 @media screen and (max-width: 576px) {
   .header {
+    padding-bottom: 0px;
     .navbar {  
       >a {
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 10px;
       }
     }
   }
